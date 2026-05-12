@@ -95,12 +95,12 @@ header p {
 
 /* --- 4. Navigation --- */
 nav {
-    background-color: rgba(26, 42, 76, 0.95); /* Adjusted for new primary color */
+    background-color: rgba(34, 197, 94, 0.15); /* light green glass effect */
     backdrop-filter: blur(5px);
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 1px solid #22c55e;
 }
 
 nav ul {
