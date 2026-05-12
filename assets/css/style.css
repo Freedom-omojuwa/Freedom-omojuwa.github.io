@@ -1,14 +1,14 @@
 
 /* --- 1. Variables (Modern Tech Palette) --- */
 :root {
-    --primary-color: #0f3d2e;   /* dark green */
-    --secondary-color: #1f6f50; /* medium green */
-    --accent-color: #28a745;    /* bright green */
+    --primary-color: #14532d;
+    --secondary-color: #166534;
+    --accent-color: #22c55e;
 
-    --light-bg-color: #F8F9FA;
+    --light-bg-color: #f0fdf4;
     --white-color: #ffffff;
-    --dark-text-color: #343A40;
-    --light-text-color: #6c757d;
+    --dark-text-color: #1f2937;
+    --light-text-color: #6b7280;
     --card-bg-color: #ffffff;
 
     --font-heading: 'Playfair Display', serif;
