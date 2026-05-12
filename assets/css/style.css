@@ -454,3 +454,14 @@ footer p {
         padding-bottom: 30px;
     }
 }
+.project-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px 15px;
+        font-size: 0.95rem;
+    }
+}
