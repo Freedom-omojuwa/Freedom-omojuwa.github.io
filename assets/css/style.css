@@ -290,7 +290,6 @@ nav ul li a:hover::after {
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
-    align-items: start;
 }
 
 .skill-column {
@@ -306,9 +305,9 @@ nav ul li a:hover::after {
 
 .skill-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 25px;
-    min-height: 60px;
+    min-height: 80px;
 }
 
 .skill-header i {
@@ -317,6 +316,7 @@ nav ul li a:hover::after {
     margin-right: 15px;
     width: 40px;
     flex-shrink: 0;
+    margin-top: 2px;
 }
 
 .skill-header h3 {
@@ -324,6 +324,7 @@ nav ul li a:hover::after {
     font-size: 1.7rem;
     color: var(--primary-color);
     line-height: 1.3;
+    word-spacing: 100vw;
 }
 
 .skill-list {
@@ -428,7 +429,6 @@ footer p {
 @media (max-width: 992px) {
     .skills-table {
         grid-template-columns: 1fr 1fr;
-        align-items: start;
     }
     .skill-column:nth-child(2) {
         border-right: none;
@@ -457,7 +457,14 @@ footer p {
         grid-template-columns: 1fr;
         padding: 20px;
         gap: 40px;
-        align-items: start;
+    }
+
+    .skill-header {
+        min-height: auto;
+    }
+
+    .skill-header h3 {
+        word-spacing: normal;
     }
 
     .skill-column:not(:last-child) {
