@@ -474,3 +474,20 @@ footer p {
         padding-bottom: 30px;
     }
 }
+
+/* 🌙 DARK MODE - ADD HERE */
+body.dark-mode {
+    --light-bg-color: #0f172a;
+    --white-color: #1e293b;
+    --dark-text-color: #e2e8f0;
+    --light-text-color: #94a3b8;
+    --card-bg-color: #1e293b;
+
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+/* optional smooth transition */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
