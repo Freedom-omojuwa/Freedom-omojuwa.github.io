@@ -308,7 +308,7 @@ nav ul li a:hover::after {
     display: flex;
     align-items: flex-start;
     margin-bottom: 25px;
-    min-height: 80px;
+    min-height: 90px;
 }
 
 .skill-header i {
