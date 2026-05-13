@@ -240,9 +240,9 @@ nav ul li a:hover::after {
 
 .project-buttons {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    gap: 12px;
     margin-top: auto;
-    flex-wrap: wrap;
 }
 
 .btn {
@@ -254,13 +254,9 @@ nav ul li a:hover::after {
     font-weight: 700;
     text-align: center;
     transition: all 0.3s ease;
-    flex: 1;
-    min-width: 120px;
     letter-spacing: 0.5px;
     border: 2px solid transparent;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    width: 100%;
 }
 
 .btn:hover {
@@ -456,20 +452,6 @@ footer p {
 
     .projects-grid {
         grid-template-columns: 1fr;
-    }
-
-    .project-buttons {
-        flex-direction: column;
-    }
-
-    .btn {
-        width: 100%;
-        flex: unset;
-        white-space: normal;
-        min-width: auto;
-        text-align: center;
-        padding: 12px 15px;
-        font-size: 0.95rem;
     }
 
     .skills-table {
