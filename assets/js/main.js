@@ -17,22 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
-    // 🌙 Dark Mode Toggle
-    const themeToggle = document.getElementById("theme-toggle");
-
-    if (themeToggle) {
-        themeToggle.addEventListener("click", () => {
-            document.body.classList.toggle("dark-mode");
-
-            if (document.body.classList.contains("dark-mode")) {
-                themeToggle.textContent = "☀️";
-            } else {
-                themeToggle.textContent = "🌙";
-            }
-        });
-    }
-
+    
 });
     // Mobile menu toggle (if you add one later)
     const mobileMenuButton = document.querySelector('.mobile-menu-button');
