@@ -242,6 +242,7 @@ nav ul li a:hover::after {
     display: flex;
     gap: 15px;
     margin-top: auto;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -253,9 +254,13 @@ nav ul li a:hover::after {
     font-weight: 700;
     text-align: center;
     transition: all 0.3s ease;
-    flex: unset;
+    flex: 1;
+    min-width: 120px;
     letter-spacing: 0.5px;
     border: 2px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .btn:hover {
@@ -453,6 +458,20 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        flex: unset;
+        white-space: normal;
+        min-width: auto;
+        text-align: center;
+        padding: 12px 15px;
+        font-size: 0.95rem;
+    }
+
     .skills-table {
         grid-template-columns: 1fr;
         padding: 20px;
@@ -471,16 +490,5 @@ footer p {
         border-right: none;
         border-bottom: 1px solid #e9ecef;
         padding-bottom: 30px;
-    }
-
-    .project-buttons {
-        flex-direction: column;
-    }
-
-    .btn {
-        width: 100%;
-        text-align: center;
-        padding: 10px 15px;
-        font-size: 0.95rem;
     }
 }
