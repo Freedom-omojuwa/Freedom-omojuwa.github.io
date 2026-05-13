@@ -1,5 +1,6 @@
 // Main navigation functionality
 document.addEventListener('DOMContentLoaded', function() {
+
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-        // 🌙 Dark Mode Toggle
+    // 🌙 Dark Mode Toggle
     const themeToggle = document.getElementById("theme-toggle");
 
     if (themeToggle) {
@@ -31,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+});
     // Mobile menu toggle (if you add one later)
     const mobileMenuButton = document.querySelector('.mobile-menu-button');
     if (mobileMenuButton) {
